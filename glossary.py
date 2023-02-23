@@ -9,6 +9,18 @@
     import credentials as creds #Saving credentials or data in a Python file
         creds.username
         creds.password
-        
+    import pickle as pk #Saving Python objects
+        with open('readings.pk', 'rb') as f: #Opening Python objects
+#SQL (command line)z
+    sqlite3 chinook.db #opens chinook db with SQLite shell
+    .tables #prints out the tables in the database
+    SELECT * FROM artists LIMIT 5; #selects all columns from artists 
+#SQL (python)
+    import sqlite3
+        sqlite3.connect('chinook.db')
+        connection = sqlite3.connect('chinook.db')
+        cursor = connection.cursor()
+        cursor.execute('SELECT * FROM artists LIMIT 5;')
+        cursor.fetchall()
     
     
