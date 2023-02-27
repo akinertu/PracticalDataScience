@@ -1,4 +1,4 @@
-# SQL and Built-in File Handling Modules in Python Ch3
+#Built-in File Handling Modules in Python Ch3
     with open('reading.json', 'w') as f:
             text = f.read()
 #JSON module (JavaScript Object Notation)
